@@ -10,4 +10,9 @@ public class SimCardActivator {
         SpringApplication.run(SimCardActivator.class, args);
     }
 
+    @Bean
+    public RestTemplate restTemplate(RestTemplateBuilder builder) {
+        return builder.build();
+    }
+
 }
